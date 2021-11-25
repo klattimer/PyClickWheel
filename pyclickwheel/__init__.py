@@ -74,7 +74,7 @@ class ClickWheel:
 
     def onClockEdge(self, event, tick):
         """Collect the bits for the input state."""
-        data = bool(self.pi.read(event))
+        data = bool(self.pi.read(DATA_PIN))
 
         if data is False:
             self.recording = True
