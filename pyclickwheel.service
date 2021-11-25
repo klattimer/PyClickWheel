@@ -1,0 +1,9 @@
+[Unit]
+Description=PyClickWheel
+After=network.target
+[Service]
+ExecStart=/usr/local/bin/pyclickwheel
+Restart=always
+RestartSec=5
+[Install]
+WantedBy=multi-user.target
